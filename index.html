@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Сервер Minecraft CumWorld</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      font-family: 'Press Start 2P', cursive, monospace;
+      background: linear-gradient(135deg, #f2b36d, #a75c00);
+      color: #3b1e00;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #8b4513;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 1.8rem;
+      color: #fff3d2;
+      text-shadow: 2px 2px 0 #5c2e00;
+      border-bottom: 4px solid #5c2e00;
+    }
+
+    nav {
+      background-color: #5c2e00;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+      box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    }
+
+    nav a {
+      color: #fff3d2;
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 8px 15px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    nav a:hover {
+      background-color: #f2b36d;
+      color: #3b1e00;
+      border-color: #3b1e00;
+    }
+
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px 40px;
+      background: rgba(255, 244, 224, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      border-bottom: 3px solid #a75c00;
+      padding-bottom: 6px;
+      color: #7a3e00;
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+    }
+
+    p, li {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #4b2e00;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      border-radius: 10px;
+      box-shadow: 0 0 12px #a75c00;
+      max-width: 280px;
+      max-height: 180px;
+      object-fit: cover;
+      border: 3px solid #f2b36d;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 18px #f2b36d;
+    }
+
+    a.button {
+      display: inline-block;
+      background-color: #a75c00;
+      color: #fff3d2;
+      padding: 12px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    a.button:hover {
+      background-color: #7a3e00;
+      color: #ffeec1;
+    }
+
+    footer {
+      background-color: #8b4513;
+      color: #fff3d2;
+      text-align: center;
+      padding: 14px 10px;
+      font-size: 0.9rem;
+      border-top: 4px solid #5c2e00;
+      box-shadow: 0 -3px 6px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+      .gallery img {
+        max-width: 90vw;
+        max-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>🍁Cервер CumWorld 🍂</header>
+
+<nav>
+  <a href="#ip">IP сервера</a>
+  <a href="#discord">Discord</a>
+  <a href="#rules">Правила</a>
+  <a href="#gallery">Галерея</a>
+  <a href="#wiki">Вики</a>
+</nav>
+
+<main>
+  <section id="ip">
+    <h2>IP сервера</h2>
+    <p><strong>94.130.45.173:25935</strong></p>
+  </section>
+
+  <section id="discord">
+    <h2>Наш Discord</h2>
+    <p>Присоединяйся к нашему Discord-серверу для общения и поддержки!</p>
+    <a href="https://discord.gg/2tK3tAV29B" class="button" target="_blank" rel="noopener noreferrer">Войти в Discord</a>
+  </section>
+
+  <section id="rules">
+    <h2>Правила сервера</h2>
+    <ul>
+      <li>Запрещено использование читов и багов.</li>
+      <li>Уважайте других игроков и администрацию.</li>
+      <li>Запрещена реклама других серверов.</li>
+      <li>Не разрушайте чужие постройки без разрешения.</li>
+      <li>Соблюдайте правила чата — без спама и оскорблений.</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Галерея</h2>
+    <div class="gallery">
+      <img src="https://i.imgur.com/3aJrWmB.jpg" alt="Скриншот сервера 1" />
+      <img src="https://i.imgur.com/GFqYb2Z.jpg" alt="Скриншот сервера 2" />
+      <img src="https://i.imgur.com/n0ZP3gP.jpg" alt="Скриншот сервера 3" />
+    </div>
+  </section>
+
+  <section id="wiki">
+    <h2>Вики / FAQ</h2>
+    <h3>Как подключиться к серверу?</h3>
+    <p>В Minecraft выберите "Мультиплеер", нажмите "Добавить сервер" и введите IP: <strong>94.130.45.173:25935</strong>.</p>
+    <h3>Как получить VIP-ранг?</h3>
+    <p>Временный VIP-ранг можно купить за внутриигровую валюту через магазин на сервере.</p>
+    <h3>Где найти правила?</h3>
+    <p>Правила доступны на этой странице сайта и в чате сервера.</p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 CumWorld. Все права защищены.
+</footer>
+
+</body>
+</html>
