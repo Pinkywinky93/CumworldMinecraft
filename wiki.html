@@ -1,40 +1,183 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Вики CumWorld</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Вики CumWorld — Частые вопросы</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: Arial, sans-serif; background-color: #fafafa; color: #333; margin: 0; padding: 0; }
-    header, footer { background-color: #444; color: white; text-align: center; padding: 15px; }
-    nav { background-color: #333; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    main { padding: 20px; }
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #7dbf44 0%, #3a5228 100%);
+      font-family: 'Press Start 2P', cursive, monospace;
+      color: #fff;
+      text-shadow: 1px 1px 0 #000;
+    }
+
+    header {
+      background: url('https://i.imgur.com/0aGd9T6.jpg') center/cover no-repeat;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+      font-size: 1.8rem;
+      border-top: 4px solid #6a9955;
+      border-bottom: 4px solid #6a9955;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      box-shadow: inset 0 0 15px #0008;
+    }
+
+    nav {
+      background: #2f2f2f;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 0;
+      border-bottom: 4px solid #6a9955;
+    }
+    nav a {
+      color: #a6d32d;
+      text-decoration: none;
+      font-size: 0.8rem;
+      padding: 10px 16px;
+      border: 4px solid #a6d32d;
+      border-radius: 4px;
+      box-shadow: 4px 4px 0 #4e7000;
+      background: linear-gradient(145deg, #8fc339, #69981f);
+      transition: all 0.15s ease-in-out;
+      text-transform: uppercase;
+      font-weight: bold;
+      user-select: none;
+      position: relative;
+      display: inline-block;
+    }
+    nav a:hover {
+      background: linear-gradient(145deg, #a3e047, #7bb82b);
+      box-shadow: 6px 6px 0 #355100;
+      transform: translate(-2px, -2px);
+      border-color: #7bb82b;
+      color: #1b2308;
+      text-shadow: none;
+    }
+    nav a:active {
+      box-shadow: 2px 2px 0 #4e7000;
+      transform: translate(2px, 2px);
+      background: linear-gradient(145deg, #69981f, #8fc339);
+      border-color: #4e7000;
+      color: #1b2308;
+      text-shadow: none;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #1f2d14cc;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #000a;
+      border: 3px solid #6a9955;
+      padding: 30px 25px;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #d7f475;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: #a6d32d;
+      text-shadow: 2px 2px 3px #224400;
+      letter-spacing: 0.1em;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #8bd32a;
+      text-shadow: 1px 1px 2px #112200;
+    }
+
+    p {
+      margin: 0 0 15px 0;
+      color: #d7f475;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    footer {
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      color: #bbb;
+      background-color: #333;
+      text-align: center;
+      padding: 10px;
+      border-top: 4px solid #6a9955;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      user-select: none;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      nav a {
+        font-size: 0.7rem;
+        padding: 8px 12px;
+      }
+      main {
+        margin: 15px;
+        padding: 20px 15px;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    Вики сервера CumWorld
+    Вики CumWorld
   </header>
   <nav>
     <a href="index.html">Главная</a>
     <a href="wiki.html">Вики</a>
     <a href="gallery.html">Галерея</a>
     <a href="rules.html">Правила</a>
-    <a href="https://discord.gg/2tK3tAV29B" target="_blank">Discord</a>
+    <a href="https://discord.gg/2tK3tAV29B" target="_blank" rel="noopener noreferrer">Discord</a>
   </nav>
   <main>
-    <h2>Добро пожаловать в Вики!</h2>
-    <p>Здесь вы найдёте информацию о механиках сервера, гайдах и особенностях игрового процесса.</p>
-    <ul>
-      <li>Экономика и торговля</li>
-      <li>Доступные команды</li>
-      <li>Ранги и привилегии</li>
-      <li>События и квесты</li>
-    </ul>
+    <h2>Частые вопросы (FAQ)</h2>
+
+    <h3>❓ Как подключиться к серверу?</h3>
+    <p>Запусти Minecraft версии 1.21, добавь IP <strong>94.130.45.173:25935</strong> в список серверов и присоединяйся к CumWorld!</p>
+
+    <h3>🛡️ Какие модификации разрешены?</h3>
+    <p>Разрешены только косметические моды и клиент без читов. Использование читов и модификаций, дающих преимущества, строго запрещено.</p>
+
+    <h3>⚔️ Можно ли участвовать в PvP?</h3>
+    <p>Да, PvP разрешено, но только честное без читов и обмана. Соблюдай правила честной игры.</p>
+
+    <h3>🏠 Как построить свой дом?</h3>
+    <p>Строй на своей территории, не разрушая чужие постройки без разрешения. Уважай пространство других игроков.</p>
+
+    <h3>💰 Как работает экономика сервера?</h3>
+    <p>Экономика построена на честной торговле. Мошенничество и мультиаккаунты для получения преимуществ запрещены.</p>
+
+    <h3>🛑 Что делать при возникновении проблем?</h3>
+    <p>Обращайся к администрации сервера через Discord по ссылке в навигации. Решения администрации окончательные.</p>
   </main>
   <footer>
-    &copy; 2025 CumWorld Server
+    &copy; 2025 CumWorld Server. Все права защищены.
   </footer>
 </body>
 </html>
