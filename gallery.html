@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
@@ -14,7 +14,7 @@
       text-align: center;
     }
     header {
-      background: url('https://i.imgur.com/0aGd9T6.jpg') center/cover no-repeat;
+      background: #4a6b1e; /* вместо картинки однотонный фон */
       height: 250px;
       display: flex;
       align-items: center;
@@ -84,10 +84,8 @@
     .gallery-item {
       margin-bottom: 40px;
     }
-    iframe {
-      width: 100%;
-      height: 450px;
-      border: none;
+    img {
+      max-width: 100%;
       border-radius: 8px;
       box-shadow: 0 0 10px #4e7000;
     }
@@ -112,9 +110,6 @@
       user-select: none;
     }
     @media (max-width: 600px) {
-      iframe {
-        height: 300px;
-      }
       main {
         margin: 15px;
         padding: 15px;
@@ -135,21 +130,21 @@
     <h2>Скриншоты нашего сервера</h2>
 
     <div class="gallery-item">
-      <iframe src="https://imgur.com/gallery/3-JwQAzim/embed"></iframe>
+      <img src="https://i.imgur.com/RWaLxyD.png" alt="Скриншот 1" />
       <div class="caption">
         Красивые виды и пейзажи сервера CumWorld — окунитесь в атмосферу выживания и свободы.
       </div>
     </div>
 
     <div class="gallery-item">
-      <iframe src="https://imgur.com/a/1-rChBTeq/embed"></iframe>
+      <img src="https://i.imgur.com/cDpG2yV.png" alt="Скриншот 2" />
       <div class="caption">
         Постройки игроков — творчество и уют в каждом блоке.
       </div>
     </div>
 
     <div class="gallery-item">
-      <iframe src="https://imgur.com/a/2-GWoNd31/embed"></iframe>
+      <img src="https://i.imgur.com/3v3Nam3.png" alt="Скриншот 3" />
       <div class="caption">
         Наш сервер — место, где каждый может построить свой мир.
       </div>
