@@ -4,12 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Добро пожаловать в CumWorld</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
       background: linear-gradient(135deg, #7dbf44 0%, #3a5228 100%);
-      font-family: 'Press Start 2P', cursive, monospace;
+      font-family: monospace, cursive, sans-serif;
       color: #fff;
       text-shadow: 1px 1px 0 #000;
     }
@@ -79,22 +78,38 @@
       border-radius: 10px;
       box-shadow: 0 0 15px #000a;
       border: 3px solid #6a9955;
-      text-align: center;
       font-size: 0.9rem;
       line-height: 1.5;
-    }
-
-    h2 {
       color: #d7f475;
       text-shadow: 1px 1px 2px #000;
-      margin-bottom: 15px;
+      text-align: center;
     }
 
-    p strong {
+    h1 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    #online-count {
       font-weight: bold;
-      color: #a6d32d;
-      text-shadow: 1px 1px 2px #000;
       font-size: 1.2rem;
+      margin: 15px 0;
+      color: #a6d32d;
+      text-shadow: 2px 2px 4px #113300;
+    }
+
+    .description {
+      margin-top: 20px;
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: justify;
+      color: #e3f9a6;
+      text-shadow: 1px 1px 3px #224400;
     }
 
     footer {
@@ -151,10 +166,22 @@
     <a href="https://discord.gg/2tK3tAV29B" target="_blank" rel="noopener noreferrer">Discord</a>
   </nav>
   <main>
-    <h2>IP сервера:</h2>
-    <p><strong>94.130.45.173:25935</strong></p>
+    <h1>Присоединяйся к лучшему Minecraft серверу!</h1>
     <p id="online-count">Загрузка онлайн игроков...</p>
-    <p>Запусти Minecraft версии 1.21 и добавь наш IP, чтобы присоединиться!</p>
+
+    <div class="description">
+      <p><strong>CumWorld</strong> — это уникальный сервер, где каждый игрок найдёт для себя что-то интересное.</p>
+      <p>У нас продуманная система экономики, дружелюбное сообщество и постоянные обновления. Мы заботимся о каждом игроке и создаём атмосферу настоящего игрового приключения.</p>
+      <p>Что отличает наш сервер от других?</p>
+      <ul style="list-style-type: square; padding-left: 20px; text-align: left; color: #c3f58a;">
+        <li>Стабильная работа и минимум лагов.</li>
+        <li>Регулярные ивенты и конкурсы с крутыми призами.</li>
+        <li>Индивидуальный подход к каждому игроку.</li>
+        <li>Чистое ванильное выживание без модификаций.</li>
+        <li>Команда опытных администраторов и модераторов.</li>
+      </ul>
+      <p>Запусти Minecraft версии 1.21, добавь IP: <strong>94.130.45.173:25935</strong> и окунись в мир приключений с нами!</p>
+    </div>
   </main>
   <footer>
     &copy; 2025 CumWorld Server. Все права защищены.
